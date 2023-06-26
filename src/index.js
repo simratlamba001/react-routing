@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Blog from "./Pages/Blog";
 import Listing from "./Pages/Listing";
 import reportWebVitals from "./reportWebVitals";
+import Youtube from "./Pages/Youtube";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route exact path="/" element={<App />}></Route>
         <Route exact path="/blog" element={<Blog />}></Route>
         <Route exact path="/listing" element={<Listing />}></Route>
+        <Route exact path="/youtube" element={<Youtube />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

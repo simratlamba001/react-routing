@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import UserListing from "./Components/UserListing";
 import axios from "axios";
 import SearchUser from "./Components/SearchUser";
-import YoutubeVideos from "./Components/Youtube/YoutubeVideos";
 
 function App() {
   const [loginuser, setLoginUser] = useState([]);
@@ -27,10 +26,9 @@ function App() {
   return (
     <>
       <section className="bg-gray-300">
-        {/* <SearchUser onTerm={searchUser}></SearchUser>
-        <UserListing loginuser={loginuser}></UserListing> */}
+        <SearchUser onTerm={searchUser}></SearchUser>
+        <UserListing loginuser={loginuser}></UserListing>
       </section>
-      <YoutubeVideos></YoutubeVideos>
     </>
   );
 }
